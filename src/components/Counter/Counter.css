@@ -1,0 +1,35 @@
+.pie-card{
+    width: 150px;
+    margin: auto;
+}
+
+.bar-contador{
+    display: inline-flex;
+
+    width: 100%;
+    justify-content:space-between;
+
+}
+
+.btn-square{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border: 1px solid black;
+    color: white;
+    text-align:center;
+    text-decoration:solid;
+    font-size: 18px;
+}
+.btn-carrito {
+    width: 100%;
+    height:auto;
+    background-color: red;
+    border:1px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+

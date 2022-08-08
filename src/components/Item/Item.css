@@ -1,0 +1,25 @@
+.tarjeta_producto{
+    border: 2px solid red;
+    list-style: none;
+    margin: 20px;
+    width: 250px;
+    display: inline-block;
+}
+
+.img_producto{
+    width:180px;
+}
+
+.btn_detalle {
+    width: 200px;
+    height:auto;
+    background-color: red;
+    border-radius: 8px;
+    border:1px solid black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
