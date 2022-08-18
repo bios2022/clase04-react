@@ -10,7 +10,7 @@ const ItemListContainer = ({bienvenida}) => {
     const { categoryId} = useParams()
 
     useEffect(()=>{
-        const asyncFunction = categoryId ? getProductByCategory : getProducts
+        {/*const asyncFunction = categoryId ? getProductByCategory : getProducts
 
         asyncFunction(categoryId).then(products => {
             setProducts(products)
@@ -18,7 +18,7 @@ const ItemListContainer = ({bienvenida}) => {
             console.log(error)
         })
         
-        {/*if(!categoryId){
+        if(!categoryId){
             getProducts().then(products => {
                 setProducts(products)
             })

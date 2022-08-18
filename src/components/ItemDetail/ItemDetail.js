@@ -1,6 +1,20 @@
 import './ItemDetail.css'
+import Counter from '../Counter/Counter'
+import { useState } from 'react'
 
 const ItemDetail = ({nombre, img_detalle, precio, descrip, color, peso, envio, cuotas}) => {
+    
+    
+    const [cantidad, setCantidad] = useState(0)
+    //console.log(cantidad)
+
+
+
+    const handleOnAdd = (cantidad) => {
+        console.log(cantidad )
+        setCantidad(cantidad)
+      }
+      
 
     return(
         <>
@@ -17,7 +31,8 @@ const ItemDetail = ({nombre, img_detalle, precio, descrip, color, peso, envio, c
                         <h3>{color}</h3>
                         <h3>{peso}</h3>
                         <h3>{envio}</h3>                        
-                        <button className='btn_carrito'>Agregar al Carro</button>
+                        {/*<button className='btn_carrito'>Agregar al Carro</button>*/}
+                        <Counter  onConfirm ={handleOnAdd} stock={'stock'} />
                     </li>
                 </div>
             </li>

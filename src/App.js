@@ -6,11 +6,6 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 
 function App() {
-  
-  const handleOnAdd = (cantidad) => {
-    console.log(cantidad )
-  }
-  
   return (
     <div className="App">
         <BrowserRouter>
